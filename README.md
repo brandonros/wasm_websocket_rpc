@@ -1,5 +1,5 @@
 # wasm_websocket_rpc_client
-RPC over WebSocket with MessagePack + WebAssembly + Rust
+RPC over WebSocket with MessagePack + WebAssembly + Rust client
 
 ## How to use
 
