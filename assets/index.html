@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+    <script type="module">
+        import * as WasmLibrary from '../pkg/wasm_websocket_rpc.js';
+
+        async function run() {
+            await WasmLibrary.default() // wasm-pack init
+            await WasmLibrary.init_logging()
+            await WasmLibrary.init_websocket();
+            const response = await WasmLibrary.sum([2, 2]);
+            console.log(response)
+        }
+
+        run();
+    </script>
+</body>
+</html>
